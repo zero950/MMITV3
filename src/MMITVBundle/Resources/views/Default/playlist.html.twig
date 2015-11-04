@@ -1,0 +1,9 @@
+{% block body %}
+
+{% for playlist in playlist %}
+    {{ playlist.playlist.nom }}
+    {{ playlist.playlist.description }}
+    <br>
+{% endfor %}
+
+{% endblock %}

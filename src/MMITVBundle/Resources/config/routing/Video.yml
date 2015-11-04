@@ -1,0 +1,30 @@
+video:
+    path:     /
+    defaults: { _controller: "MMITVBundle:Video:index" }
+
+video_show:
+    path:     /{id}/show
+    defaults: { _controller: "MMITVBundle:Video:show" }
+
+video_new:
+    path:     /new
+    defaults: { _controller: "MMITVBundle:Video:new" }
+
+video_create:
+    path:     /create
+    defaults: { _controller: "MMITVBundle:Video:create" }
+    methods:  POST
+
+video_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MMITVBundle:Video:edit" }
+
+video_update:
+    path:     /{id}/update
+    defaults: { _controller: "MMITVBundle:Video:update" }
+    methods:  [POST, PUT]
+
+video_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MMITVBundle:Video:delete" }
+    methods:  [POST, DELETE]
