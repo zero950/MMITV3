@@ -1,10 +1,9 @@
 {% extends '::base.html.twig' %}
+
 {% block body %}
 
-{% for playlist in playlist %}
-    {{ playlist.nom }}
-    {{ playlist.nbrvideo }}
-    {{ playlist.type }}
-{% endfor %}
+{% for playlists in playlist %}
+    {{ playlists.nom }}
+    {% endfor %}
 
 {% endblock %}
